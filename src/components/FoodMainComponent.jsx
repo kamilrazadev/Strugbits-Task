@@ -99,6 +99,7 @@ const FoodMainComponent = () => {
         allMeals={
           selectedTab === "allmeals" ? allMeals : weekMeals[selectedTab]
         }
+        selectedTab={selectedTab}
         selectedMeals={selectedMeals}
         selectMeal={handleSelectMeal}
         onDelete={(meal) => handleDeleteMeal(meal, selectedTab)}

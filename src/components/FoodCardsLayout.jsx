@@ -5,6 +5,7 @@ import MealCardSkeleton from "./MealCardSkeleton";
 const FoodCardsLayout = ({
   loading,
   allMeals,
+  selectedTab,
   selectedMeals,
   selectMeal,
   onDelete,
@@ -28,7 +29,9 @@ const FoodCardsLayout = ({
           <MealCard
             key={key}
             meal={meal}
-            isSelected={selectedMeals.includes(meal)}
+            isSelected={
+              selectedTab !== "allmeals" ? false : selectedMeals.includes(meal)
+            }
             selectMeal={selectMeal}
             onDelete={onDelete}
             showDelete={showDelete}

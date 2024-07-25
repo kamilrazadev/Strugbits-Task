@@ -29,7 +29,7 @@ const AddToWeekModal = ({ isOpen, onClose, onAssign }) => {
           >
             <h3 className="text-center text-xl font-bold">Select Weeks</h3>
             <div className="flex flex-wrap items-center justify-center gap-2">
-              {tabsData.map((week, key) => (
+              {tabsData.slice(1).map((week, key) => (
                 <button
                   key={key}
                   className={`py-2 px-4 rounded-md ${
