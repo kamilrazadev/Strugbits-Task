@@ -88,7 +88,7 @@ const FoodMainComponent = () => {
         }
       />
       {selectedTab !== "allmeals" ? (
-        <div className="custom-container">
+        <div className="sm:hidden block custom-container">
           <p>{`Week ${selectedTab.replace("week", "")}`}</p>
         </div>
       ) : (
